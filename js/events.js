@@ -5,7 +5,12 @@ function getIt (){
   } );
 }
 function frameIt(){
-  return $(document).on('load', function(){
+  return $('img').on('load', function(){
+    $('img').append('class=tasty');
+  });
+}
+function pressIt(){
+  return $(document).on('keydown', function(){
     
   });
 }
